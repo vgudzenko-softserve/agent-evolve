@@ -1,0 +1,64 @@
+```mermaid
+flowchart TD
+    subgraph "Core Architecture"
+        A[Evolutionary Controller Pipeline]
+        B[Agent Execution Environment]
+        C[Hybrid Evolutionary Database]
+        D[Multi-Stage Cascade Evaluation]
+
+        A --> B
+        B --> D
+        C <--> A
+        D --> C
+
+        subgraph "Evolutionary Controller"
+            A1[Parent Selection]
+            A2[Context-Aware Task Generation]
+            A3[Multi-Agent Execution]
+            A4[Cascaded Evaluation]
+            A5[Database Update]
+
+            A1 --> A2 --> A3 --> A4 --> A5
+            A5 -.-> A1
+        end
+
+        subgraph "Execution Environment"
+            B1[Docker-based Sandboxes]
+            B2[Git Branch Separation]
+            B3[Checkpoint System]
+            B4[Resource Monitoring]
+
+            B1 --- B2
+            B2 --- B3
+            B3 --- B4
+        end
+
+        subgraph "Evolutionary Database"
+            C1[MAP-Elites Algorithm]
+            C2[Island Model]
+            C3[Elite Archive]
+            C4[Feature Mapping]
+
+            C1 --- C2
+            C2 --- C3
+            C3 --- C4
+        end
+
+        subgraph "Cascade Evaluation"
+            D1[Stage 1: Functional Correctness]
+            D2[Stage 2: Code Quality Analysis]
+            D3[Stage 3: Comprehensive Evaluation]
+            D4[Parallel Execution Pool]
+
+            D1 --> D2 --> D3
+            D4 -.- D1
+            D4 -.- D2
+            D4 -.- D3
+        end
+
+        A --- A1
+        B --- B1
+        C --- C1
+        D --- D1
+    end
+```
