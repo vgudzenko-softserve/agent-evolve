@@ -19,8 +19,8 @@
 
 ### Evaluation Metrics
 #### Outcome based metrics:
-1) Task completeness (instructions and requirements completed)
-2) Functional correctness (executable, correct output, proper error handling)
+1) Functional correctness (executable, correct output, proper error handling)
+2) Task completeness (instructions and requirements completed)
 3) Code quality (linting, unit & integration test pass rate, security issues)
 4) Structural design (code organization, architecture, patterns, documentation)
 
